@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Rupee112</string>
+    <string name="title_activity_mobile">MobileActivity</string>
 </resources>

@@ -20,18 +20,6 @@ class VersionViewModel :ViewModel() {
     private val _version = MutableStateFlow<DataState<Demo>>(DataState.Loading)
     val version:StateFlow<DataState<Demo>> = _version
 
-//    fun checkApiVersion(){
-//        viewModelScope.launch {
-//            try {
-
-//                val data = apiService.version()
-//                _version.value = DataState.Success(data)
-//            }catch (e:Exception){
-//               _version.value = DataState.Error("Network error occurred")
-//            }
-//
-//        }
-//    }
 
     fun checkVersionApp(apiService: ApiService,param: AppVersionRequest){
         viewModelScope.launch {
